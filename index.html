@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NextDance</title>
+    <meta
+      name="description"
+      content="NextDance — track your dance sessions. Activity, style, timestamped notes, all stored on your device."
+    />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +18,76 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body class="bg-bg text-text">
-    <div class="font-display text-gold p-8">Hello NextDance</div>
+    <header class="flex items-center justify-between px-6 py-6 md:px-12">
+      <span class="font-display text-lg text-text">NextDance</span>
+      <a href="/privacy.html" class="text-sm text-text-muted hover:text-text">
+        Privacy Policy
+      </a>
+    </header>
+
+    <main class="px-6 md:px-12">
+      <section class="relative overflow-hidden rounded-3xl bg-bg-elevated p-8 md:p-16">
+        <!-- decorative squiggle accent -->
+        <svg
+          class="pointer-events-none absolute inset-0 h-full w-full opacity-30"
+          viewBox="0 0 800 400"
+          fill="none"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0 320 C 150 260, 250 380, 400 300 S 650 180, 800 260"
+            stroke="#3A352F"
+            stroke-width="2"
+            fill="none"
+          />
+        </svg>
+
+        <div class="relative">
+          <h1 class="font-display text-5xl leading-none md:text-7xl">
+            <span class="block font-semibold">TRACK YOUR</span>
+            <span class="block italic text-text-muted">NIGHT</span>
+          </h1>
+
+          <p class="mt-6 max-w-md text-text-muted">
+            Log every session — activity, style, timestamped notes. All
+            stored on your device, nothing in the cloud.
+          </p>
+
+          <a
+            href="#"
+            class="mt-8 inline-block rounded-full bg-gold px-6 py-3 font-semibold text-bg"
+          >
+            Get the app
+          </a>
+          <!-- TODO: replace href="#" with the real App Store link once NextDance is published -->
+
+          <div class="mt-10">
+            <p class="text-sm text-text-muted">Coming soon</p>
+            <div class="mt-3 flex gap-3">
+              <span
+                class="rounded-full border border-border-strong px-4 py-2 text-sm text-text-dim"
+              >
+                App Store
+              </span>
+              <span
+                class="rounded-full border border-border-strong px-4 py-2 text-sm text-text-dim"
+              >
+                Google Play
+              </span>
+            </div>
+          </div>
+
+          <div class="mt-12 flex justify-center">
+            <div
+              class="flex h-96 w-48 items-center justify-center rounded-3xl border border-border-strong bg-bg-inset"
+            >
+              <span class="px-4 text-center text-sm text-text-dim">
+                screenshot coming soon
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
