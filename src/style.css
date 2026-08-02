@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@theme {
+  --color-bg: #171513;
+  --color-bg-elevated: #1f1c19;
+  --color-bg-inset: #100e0d;
+
+  --color-text: #efe6d2;
+  --color-text-muted: #a39a88;
+  --color-text-dim: #6e6759;
+
+  --color-gold: #c9a86a;
+  --color-gold-dim: #8a7448;
+  --color-blue: #7b92a6;
+  --color-blue-dim: #54657a;
+
+  --color-border: #2a2622;
+  --color-border-strong: #3a352f;
+
+  --font-display: "Fraunces", serif;
+}
