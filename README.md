@@ -4,7 +4,8 @@ Marketing landing page for NextDance, deployed at [nextdance.app](https://nextda
 
 ## Stack
 
-- [Vite](https://vite.dev) — multi-page build (`index.html`, `privacy.html`)
+- [Vite](https://vite.dev) — multi-page build (`index.html`, `privacy.html`), each mounting a React root
+- [React](https://react.dev) — shared components (`Header`, `Footer`, `GetAppButton`) live in `src/components`, pages in `src/pages`
 - [Tailwind CSS v4](https://tailwindcss.com)
 
 ## Development

@@ -15,50 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body class="flex min-h-screen flex-col bg-bg text-text">
-    <header class="flex items-center justify-between px-6 py-6 md:px-12">
-      <a href="/index.html" class="flex items-center gap-2">
-        <img src="/favicon.png" alt="" class="h-9 w-auto" />
-        <span class="font-display text-lg text-text">NextDance</span>
-      </a>
-      <a
-        href="#"
-        class="rounded-full border border-border-strong px-4 py-2 text-sm text-text hover:border-gold hover:text-gold"
-      >
-        Get the app
-      </a>
-      <!-- TODO: replace href="#" with the real App Store link once NextDance is published -->
-    </header>
-
-    <main class="flex-1 px-6 py-8 md:px-12">
-      <div class="mx-auto max-w-2xl">
-        <h1 class="font-display text-3xl">Privacy Policy</h1>
-        <p class="mt-2 text-sm text-text-dim">Effective date: August 2, 2026</p>
-
-        <h2 class="mt-8 font-display text-xl">What we collect</h2>
-        <p class="mt-3 text-text-muted">
-          Nothing. NextDance stores all of your session data (activity type, dance style, notes,
-          and timestamps) locally on your device. None of it is transmitted anywhere: there is no
-          backend server, and the app does not include any analytics or crash-reporting service.
-        </p>
-
-        <h2 class="mt-8 font-display text-xl">Changes to this policy</h2>
-        <p class="mt-3 text-text-muted">
-          If this ever changes (for example, if a future version of the app adds analytics), this
-          page will be updated and the effective date above will change accordingly.
-        </p>
-      </div>
-    </main>
-
-    <footer
-      class="mt-16 flex items-center justify-end px-6 py-8 text-sm text-text-muted md:px-12"
-    >
-      <span>&copy; <span id="year"></span> NextDance</span>
-    </footer>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <div id="root" class="contents"></div>
+    <script type="module" src="/src/privacy-main.jsx"></script>
   </body>
 </html>
