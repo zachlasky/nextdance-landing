@@ -6,7 +6,7 @@
     <title>Privacy Policy — NextDance</title>
     <meta
       name="description"
-      content="NextDance privacy policy — no data collection, everything stored on your device."
+      content="NextDance privacy policy: no data collection, everything stored on your device."
     />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +17,7 @@
     />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body class="bg-bg text-text">
+  <body class="flex min-h-screen flex-col bg-bg text-text">
     <header class="flex items-center justify-between px-6 py-6 md:px-12">
       <a href="/index.html" class="flex items-center gap-2">
         <img src="/favicon.png" alt="" class="h-9 w-auto" />
@@ -32,32 +32,33 @@
       <!-- TODO: replace href="#" with the real App Store link once NextDance is published -->
     </header>
 
-    <main class="px-6 py-8 md:px-12">
+    <main class="flex-1 px-6 py-8 md:px-12">
       <div class="mx-auto max-w-2xl">
         <h1 class="font-display text-3xl">Privacy Policy</h1>
         <p class="mt-2 text-sm text-text-dim">Effective date: August 2, 2026</p>
 
         <h2 class="mt-8 font-display text-xl">What we collect</h2>
         <p class="mt-3 text-text-muted">
-          Nothing. NextDance stores all of your session data — activity
-          type, dance style, notes, and timestamps — locally on your
-          device. None of it is transmitted anywhere: there is no backend
-          server, and the app does not include any analytics or
-          crash-reporting service.
+          Nothing. NextDance stores all of your session data (activity type, dance style, notes,
+          and timestamps) locally on your device. None of it is transmitted anywhere: there is no
+          backend server, and the app does not include any analytics or crash-reporting service.
         </p>
 
         <h2 class="mt-8 font-display text-xl">Changes to this policy</h2>
         <p class="mt-3 text-text-muted">
-          If this ever changes — for example, if a future version of the
-          app adds analytics — this page will be updated and the effective
-          date above will change accordingly.
+          If this ever changes (for example, if a future version of the app adds analytics), this
+          page will be updated and the effective date above will change accordingly.
         </p>
       </div>
     </main>
 
-    <footer class="mt-16 flex items-center justify-between px-6 py-8 text-sm text-text-muted md:px-12">
-      <a href="/index.html" class="hover:text-text-muted">Home</a>
-      <span>&copy; 2026 NextDance</span>
+    <footer
+      class="mt-16 flex items-center justify-end px-6 py-8 text-sm text-text-muted md:px-12"
+    >
+      <span>&copy; <span id="year"></span> NextDance</span>
     </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

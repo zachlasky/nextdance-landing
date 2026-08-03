@@ -64,7 +64,7 @@
 
             <a
               href="#"
-              class="mt-8 inline-block rounded-full bg-gold px-6 py-3 font-semibold text-bg"
+              class="mt-8 inline-block rounded-full bg-gold px-6 py-3 font-semibold text-bg hover:bg-gold-dim"
             >
               Get the app
             </a>
@@ -107,19 +107,27 @@
             </div>
           </div>
 
-          <div class="mt-12 flex justify-center md:mt-0 md:flex-1">
-            <img
-              src="/app-screenshot.png"
-              alt="NextDance app screenshot"
-              class="rounded-3xl border border-border-strong object-cover w-auto h-128 lg:h-160"
-            />
+          <div class="mt-12 flex justify-center md:mt-0 md:flex-1" style="perspective: 1500px">
+            <div
+              class="rounded-[2.75rem] bg-bg-inset p-2.5 shadow-2xl ring-1 ring-border-strong"
+              style="transform: rotateY(-10deg) rotateX(2deg)"
+            >
+              <img
+                src="/app-screenshot.png"
+                alt="NextDance app screenshot"
+                class="h-128 w-auto rounded-[2.25rem] lg:h-160"
+              />
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer class="mt-16 flex items-center justify-between px-6 py-8 text-sm text-text-muted md:px-12">
       <a href="/privacy.html" class="hover:text-text-muted">Privacy Policy</a>
-      <span>&copy; 2026 NextDance</span>
+      <span>&copy; <span id="year"></span> NextDance</span>
     </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
