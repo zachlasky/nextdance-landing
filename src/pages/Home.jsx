@@ -15,8 +15,7 @@ export function Home() {
             viewBox="0 0 800 400"
             fill="none"
             preserveAspectRatio="none"
-            aria-hidden="true"
-          >
+            aria-hidden="true">
             <path
               d="M0 320 C 150 260, 250 380, 400 300 S 650 180, 800 260"
               stroke="currentColor"
@@ -33,8 +32,8 @@ export function Home() {
               </h1>
 
               <p className="mt-6 max-w-md text-text-muted">
-                Log every session — activity, style, timestamped notes. All stored on your device,
-                nothing in the cloud.
+                Log every dance session — activity, style, timestamped notes. All stored on your
+                device, nothing in the cloud.
               </p>
 
               <AppStoreBadges variant="hero" />
